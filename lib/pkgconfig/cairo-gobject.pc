@@ -1,0 +1,12 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: cairo-gobject
+Description: cairo-gobject for cairo graphics library
+Version: 1.17.5
+Requires: glib-2.0, gobject-2.0, cairo
+Requires.private: zlib, fontconfig, freetype2, expat, pixman-1
+Libs: -L${libdir} -lcairo-gobject
+Libs.private: -L${libdir} -lintl -lgdi32 -lmsimg32 -lpng16
+Cflags: -I${includedir}/cairo

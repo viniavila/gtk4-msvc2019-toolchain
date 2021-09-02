@@ -1,0 +1,12 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Pango
+Description: Internationalized text handling
+Version: 1.49.0
+Requires: gobject-2.0
+Requires.private: glib-2.0, gio-2.0, gmodule-no-export-2.0, fribidi, harfbuzz, freetype2, fontconfig, expat, cairo, zlib, cairo-png, pixman-1
+Libs: -L${libdir} -lpango-1.0
+Libs.private: -lgdi32 -lmsimg32 -L${libdir} -lintl
+Cflags: -I${includedir}/pango-1.0

@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: cairo-png
+Description: PNG functions for cairo graphics library
+Version: 1.17.5
+Requires: cairo
+Requires.private: zlib
+Libs: -L${libdir} -lpng16
+Cflags: -I${includedir}

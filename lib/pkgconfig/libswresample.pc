@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: swresample
+Description: FFmpeg audio resampling library
+Version: 3.7.100
+Requires.private: libavutil
+Libs: -L${libdir} -lswresample
+Libs.private: -lws2_32 -luser32 -lbcrypt
+Cflags: -I${includedir}

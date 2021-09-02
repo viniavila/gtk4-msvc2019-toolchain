@@ -1,0 +1,9 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: expat
+Description: gtk: expat
+Version: 2.2.9
+Libs: -L${libdir} -lexpat
+Cflags: -I${includedir}

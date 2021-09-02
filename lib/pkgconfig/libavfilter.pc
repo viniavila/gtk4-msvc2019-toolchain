@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: avfilter
+Description: Audio/video filtering library
+Version: 7.85.100
+Requires.private: libavutil, libavcodec, libavformat, libswscale, libswresample, libpostproc
+Libs: -L${libdir} -lavfilter
+Libs.private: -lws2_32 -luser32 -lbcrypt -L${libdir} -lavresample
+Cflags: -I${includedir}

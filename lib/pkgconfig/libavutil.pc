@@ -1,0 +1,10 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: avutil
+Description: Multimedia utilities
+Version: 56.51.100
+Libs: -L${libdir} -lavutil
+Libs.private: -lws2_32 -luser32 -lbcrypt
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: cairo
+Description: Multi-platform 2D graphics library
+Version: 1.17.5
+Requires.private: zlib, fontconfig, freetype2, expat, pixman-1
+Libs: -L${libdir} -lcairo
+Libs.private: -lgdi32 -lmsimg32 -L${libdir} -lpng16
+Cflags: -I${includedir}/cairo

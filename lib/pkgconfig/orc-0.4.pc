@@ -1,0 +1,12 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+toolsdir=${prefix}/bin
+orcc=${toolsdir}/orcc.exe
+
+Name: orc-0.4
+Description: Library of Optimized Inner Loops Runtime Compiler
+Version: 0.4.32
+Libs: -L${libdir} -lorc-0.4
+Cflags: -I${includedir}/orc-0.4

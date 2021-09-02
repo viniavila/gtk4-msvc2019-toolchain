@@ -1,0 +1,9 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: x264
+Description: H.264 (MPEG4 AVC) encoder library
+Version: 0.160.3011
+Libs: -L${libdir} -lx264
+Cflags: -I${includedir} -DX264_API_IMPORTS

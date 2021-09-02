@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: postproc
+Description: FFmpeg postprocessing library
+Version: 55.3.100
+Requires.private: libavutil
+Libs: -L${libdir} -lpostproc
+Libs.private: -lws2_32 -luser32 -lbcrypt
+Cflags: -I${includedir}

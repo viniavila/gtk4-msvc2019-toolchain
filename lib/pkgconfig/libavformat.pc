@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: avformat
+Description: Multimedia formats
+Version: 58.45.100
+Requires.private: libavutil, libavcodec
+Libs: -L${libdir} -lavformat
+Libs.private: -lws2_32 -luser32 -lbcrypt
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: swscale
+Description: FFmpeg image rescaling library
+Version: 5.7.100
+Requires.private: libavutil
+Libs: -L${libdir} -lswscale
+Libs.private: -lws2_32 -luser32 -lbcrypt
+Cflags: -I${includedir}

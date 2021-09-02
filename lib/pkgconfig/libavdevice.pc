@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: avdevice
+Description: Media device handling
+Version: 58.10.100
+Requires.private: libavutil, libavformat, libavcodec, libswscale, libswresample, libpostproc
+Libs: -L${libdir} -lavdevice
+Libs.private: -lws2_32 -luser32 -lbcrypt -lpsapi -lole32 -lstrmiids -luuid -loleaut32 -lshlwapi -lgdi32 -L${libdir} -lavfilter -lavresample
+Cflags: -I${includedir}

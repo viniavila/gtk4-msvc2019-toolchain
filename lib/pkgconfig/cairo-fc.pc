@@ -1,0 +1,10 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: cairo-fc
+Description: Fontconfig font backend for cairo graphics library
+Version: 1.17.5
+Requires: fontconfig, cairo
+Requires.private: freetype2, expat
+Cflags: -I${includedir}

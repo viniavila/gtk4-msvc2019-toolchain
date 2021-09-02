@@ -1,0 +1,13 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+modules=0
+
+Name: libXML
+Description: libXML library version2.
+Version: 2.9.7
+Requires.private: zlib
+Libs: -L${libdir} -lxml2
+Libs.private: -lws2_32
+Cflags: -I${includedir}/libxml2

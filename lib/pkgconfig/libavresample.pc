@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: avresample
+Description: Libav audio resampling library
+Version: 4.0.0
+Requires.private: libavutil
+Libs: -L${libdir} -lavresample
+Libs.private: -lws2_32 -luser32 -lbcrypt
+Cflags: -I${includedir}

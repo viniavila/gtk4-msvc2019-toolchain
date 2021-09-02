@@ -1,0 +1,12 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Pango FT2 and Pango Fc
+Description: Freetype 2.0 and fontconfig font support for Pango
+Version: 1.49.0
+Requires: pango, freetype2, fontconfig
+Requires.private: glib-2.0, gobject-2.0, gio-2.0, gmodule-no-export-2.0, fribidi, harfbuzz, expat, cairo, zlib, cairo-png, pixman-1
+Libs: -L${libdir} -lpangoft2-1.0
+Libs.private: -lgdi32 -lmsimg32 -L${libdir} -lintl
+Cflags: -I${includedir}/pango-1.0

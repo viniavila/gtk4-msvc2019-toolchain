@@ -1,0 +1,11 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: avcodec
+Description: Multimedia codecs
+Version: 58.91.100
+Requires.private: libavutil, libswresample
+Libs: -L${libdir} -lavcodec
+Libs.private: -lws2_32 -luser32 -lbcrypt
+Cflags: -I${includedir}

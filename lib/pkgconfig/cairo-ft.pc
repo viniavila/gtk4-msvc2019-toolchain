@@ -1,0 +1,9 @@
+prefix=D:/Aplicativos/GNOME
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: cairo-ft
+Description: Freetype font backend for cairo graphics library
+Version: 1.17.5
+Requires: freetype2, cairo
+Cflags: -I${includedir}
